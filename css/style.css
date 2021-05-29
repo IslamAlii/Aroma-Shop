@@ -128,6 +128,11 @@ header nav .icons span {
   font-size: 20px;
   margin-right: 10px;
   cursor: pointer;
+  transition: 0.3s ease;
+}
+
+header nav .icons span:hover {
+  color: var(--primary-color);
 }
 
 /* --------------------- Main section styles ---------------------- */
@@ -476,7 +481,7 @@ header main > div:nth-of-type(2) .inner p {
 }
 
 .summary .be-updated form input:first-of-type {
-  min-width: 380px;
+  min-width: 350px;
   border-radius: 30px;
   height: 50px;
   border-color: #eee;
@@ -501,7 +506,6 @@ header main > div:nth-of-type(2) .inner p {
   font-size: 18px;
   line-height: 24px;
   font-weight: 500;
-  font-family: "Oswald", sans-serif;
   text-transform: capitalize;
   color: #fff;
   margin-bottom: 28px;
@@ -549,6 +553,7 @@ header main > div:nth-of-type(2) .inner p {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 1rem;
 }
 
 .summary .container > div:last-of-type > div i {
@@ -703,12 +708,23 @@ footer span {
     width: 100%;
   }
 
-  footer {
-    font-size: 13px;
+  .summary .be-updated {
+    padding: 3rem 0rem;
+    top: -27%;
   }
 
-  .summary .be-updated {
-    padding: 3rem 0;
-    top: -25%;
+  .summary .be-updated h3 {
+    font-size: 30px;
+    line-height: 1;
+  }
+
+  .summary .be-updated input {
+    width: 80%;
+    display: block;
+    margin: auto;
+  }
+
+  footer {
+    font-size: 13px;
   }
 }
